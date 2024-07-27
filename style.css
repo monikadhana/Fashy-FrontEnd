@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    text-align: center;
+    background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+.navlinks{
+    display: flex;
+    column-gap: 20px;
+}
+.navlinks a{
+    text-decoration: none;
+    color: #10232c;
+
+}
+.navlinks a:hover{
+    text-decoration: underline;
+    color: #10232c;
+}
+.navmenutoggle{
+    display: none;
+}
+@media screen and (max-width:700px){
+    .navmenutoggle{
+        display: block;
+    }
+    .navlinks{
+        display: none;
+    }
+    .imagemedia{
+        display: none;
+    }
+    .something{
+        display: none;
+    }
+    .sercontain2{
+        flex-direction: column;
+    }
+}
+.side-navbar{
+    background-color: rgb(56, 155, 155);
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -60%;
+    position: fixed;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+
+}
+.sidenavlink{
+    margin-bottom: 30px;
+}
+.sidenavlink a{
+    color: white;
+    text-decoration: none;
+}
+.sidenavlink a:hover{
+    text-decoration: underline;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+.shopnow{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgb(56, 155, 155);
+    cursor: pointer;
+}
+.service{
+    padding: 20px;
+}
+.something{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sercontain2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.sercontain2 div{
+    background-color: #F2F4F7;
+    padding: 10px;
+    border: 5px;
+}
+.newarrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.newarrcontain{
+    position: relative;
+    flex-basis: 20%;
+}
+.newarrcontain button{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 10px;
+    color: #10232c;
+    position: absolute;
+    top: 60%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: #F2F4F7;
+    background-color: rgb(56, 155, 155);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.footer{
+    margin: 20px;
+    padding: 40px;
+    background-color: rgb(56, 155, 155);
+    color: white;
+}
+.productsec{
+    margin-top: 20px;
+}
+.searchprod{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.searchprod input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.searchprod input:focus{
+   outline: none;
+}
+.product{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.prbox{
+    text-align: center;
+    flex-basis: 20%;
+}
+.prbox img{
+    border-radius: 10px;
+}
